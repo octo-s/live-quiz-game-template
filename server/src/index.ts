@@ -34,7 +34,7 @@ wss.on('connection', (ws: WebSocket) => {
                     handleCreateGame(ws, games, wsToUser, data as CreateGameData);
                     break;
                 case 'join_game':
-                    handleJoinGame(ws, data as JoinGameData);
+                    handleJoinGame(ws, games, users, wsToUser, data as JoinGameData);
                     break;
                 case 'start_game':
                     handleStartGame(ws, data as StartGameData);

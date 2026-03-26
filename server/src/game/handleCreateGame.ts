@@ -20,6 +20,7 @@ function handleCreateGame(
     data: CreateGameData
 ): void {
     const userIndex = wsToUser.get(ws);
+
     if (!userIndex) {
         sendMessage(ws, 'error', { error: true, errorText: 'Not logged in' });
         return;
@@ -32,7 +33,7 @@ function handleCreateGame(
         return;
     }
 
-    const gameId =crypto.randomUUID();
+    const gameId = crypto.randomUUID();
     let code = generateCode();
 
     while ([...games.values()].some(g => g.code === code)) {
