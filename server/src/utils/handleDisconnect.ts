@@ -1,7 +1,5 @@
-import {WebSocket} from "ws";
+import { WebSocket } from 'ws';
 
-function handleDisconnect(ws: WebSocket): void {
+function handleDisconnect(ws: WebSocket): void {}
 
-}
-
-export default handleDisconnect
+export default handleDisconnect;

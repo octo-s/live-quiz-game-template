@@ -1,8 +1,6 @@
-import {AnswerData} from "../types";
-import {WebSocket} from "ws";
+import { AnswerData } from '../types';
+import { WebSocket } from 'ws';
 
-function handleAnswer(ws: WebSocket, data: AnswerData): void {
+function handleAnswer(ws: WebSocket, data: AnswerData): void {}
 
-}
-
-export default handleAnswer
+export default handleAnswer;

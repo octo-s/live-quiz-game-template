@@ -27,19 +27,34 @@
     },
     {
       "text": "In which movie does Leonardo DiCaprio play Jack Dawson?",
-      "options": ["Inception", "Titanic", "The Revenant", "The Wolf of Wall Street"],
+      "options": [
+        "Inception",
+        "Titanic",
+        "The Revenant",
+        "The Wolf of Wall Street"
+      ],
       "correctIndex": 1,
       "timeLimitSec": 15
     },
     {
       "text": "Who directed the movie 'The Godfather'?",
-      "options": ["Martin Scorsese", "Francis Ford Coppola", "Steven Spielberg", "Quentin Tarantino"],
+      "options": [
+        "Martin Scorsese",
+        "Francis Ford Coppola",
+        "Steven Spielberg",
+        "Quentin Tarantino"
+      ],
       "correctIndex": 1,
       "timeLimitSec": 20
     },
     {
       "text": "Which movie features the character Forrest Gump?",
-      "options": ["Saving Private Ryan", "Forrest Gump", "Cast Away", "The Green Mile"],
+      "options": [
+        "Saving Private Ryan",
+        "Forrest Gump",
+        "Cast Away",
+        "The Green Mile"
+      ],
       "correctIndex": 1,
       "timeLimitSec": 15
     },
@@ -63,13 +78,23 @@
     },
     {
       "text": "Which book was written by Jane Austen?",
-      "options": ["1984", "Pride and Prejudice", "To Kill a Mockingbird", "The Great Gatsby"],
+      "options": [
+        "1984",
+        "Pride and Prejudice",
+        "To Kill a Mockingbird",
+        "The Great Gatsby"
+      ],
       "correctIndex": 1,
       "timeLimitSec": 20
     },
     {
       "text": "Who wrote 'Romeo and Juliet'?",
-      "options": ["Charles Dickens", "William Shakespeare", "Mark Twain", "J.K. Rowling"],
+      "options": [
+        "Charles Dickens",
+        "William Shakespeare",
+        "Mark Twain",
+        "J.K. Rowling"
+      ],
       "correctIndex": 1,
       "timeLimitSec": 15
     },
@@ -99,7 +124,12 @@
     },
     {
       "text": "Who painted the Mona Lisa?",
-      "options": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo"],
+      "options": [
+        "Vincent van Gogh",
+        "Pablo Picasso",
+        "Leonardo da Vinci",
+        "Michelangelo"
+      ],
       "correctIndex": 2,
       "timeLimitSec": 15
     },
@@ -111,7 +141,12 @@
     },
     {
       "text": "Which movie won the Oscar for Best Picture in 1994?",
-      "options": ["Pulp Fiction", "Forrest Gump", "The Shawshank Redemption", "Braveheart"],
+      "options": [
+        "Pulp Fiction",
+        "Forrest Gump",
+        "The Shawshank Redemption",
+        "Braveheart"
+      ],
       "correctIndex": 1,
       "timeLimitSec": 25
     },
@@ -123,7 +158,12 @@
     },
     {
       "text": "Who wrote the Harry Potter series?",
-      "options": ["J.R.R. Tolkien", "J.K. Rowling", "George R.R. Martin", "Suzanne Collins"],
+      "options": [
+        "J.R.R. Tolkien",
+        "J.K. Rowling",
+        "George R.R. Martin",
+        "Suzanne Collins"
+      ],
       "correctIndex": 1,
       "timeLimitSec": 15
     },
@@ -135,13 +175,23 @@
     },
     {
       "text": "In 'The Lord of the Rings', what is the name of the ring that Frodo carries?",
-      "options": ["The One Ring", "The Ring of Power", "Sauron's Ring", "All of the above"],
+      "options": [
+        "The One Ring",
+        "The Ring of Power",
+        "Sauron's Ring",
+        "All of the above"
+      ],
       "correctIndex": 0,
       "timeLimitSec": 20
     },
     {
       "text": "Which landmark is known as the 'Christ the Redeemer'?",
-      "options": ["Statue of Liberty", "Eiffel Tower", "Christ the Redeemer in Rio", "Great Wall of China"],
+      "options": [
+        "Statue of Liberty",
+        "Eiffel Tower",
+        "Christ the Redeemer in Rio",
+        "Great Wall of China"
+      ],
       "correctIndex": 2,
       "timeLimitSec": 15
     },
@@ -153,7 +203,12 @@
     },
     {
       "text": "Who directed 'Inception' and 'The Dark Knight'?",
-      "options": ["James Cameron", "Christopher Nolan", "Steven Spielberg", "Peter Jackson"],
+      "options": [
+        "James Cameron",
+        "Christopher Nolan",
+        "Steven Spielberg",
+        "Peter Jackson"
+      ],
       "correctIndex": 1,
       "timeLimitSec": 20
     },
@@ -165,7 +220,12 @@
     },
     {
       "text": "Which book series features the character Katniss Everdeen?",
-      "options": ["The Hunger Games", "Divergent", "Maze Runner", "Percy Jackson"],
+      "options": [
+        "The Hunger Games",
+        "Divergent",
+        "Maze Runner",
+        "Percy Jackson"
+      ],
       "correctIndex": 0,
       "timeLimitSec": 20
     },
@@ -195,7 +255,12 @@
     },
     {
       "text": "Who wrote 'The Great Gatsby'?",
-      "options": ["Ernest Hemingway", "F. Scott Fitzgerald", "John Steinbeck", "William Faulkner"],
+      "options": [
+        "Ernest Hemingway",
+        "F. Scott Fitzgerald",
+        "John Steinbeck",
+        "William Faulkner"
+      ],
       "correctIndex": 1,
       "timeLimitSec": 20
     },
@@ -207,7 +272,12 @@
     },
     {
       "text": "Which actor played Indiana Jones?",
-      "options": ["Tom Hanks", "Harrison Ford", "Arnold Schwarzenegger", "Bruce Willis"],
+      "options": [
+        "Tom Hanks",
+        "Harrison Ford",
+        "Arnold Schwarzenegger",
+        "Bruce Willis"
+      ],
       "correctIndex": 1,
       "timeLimitSec": 15
     },
@@ -231,7 +301,12 @@
     },
     {
       "text": "Which book is about a young wizard named Harry?",
-      "options": ["The Hobbit", "Harry Potter", "The Chronicles of Narnia", "Percy Jackson"],
+      "options": [
+        "The Hobbit",
+        "Harry Potter",
+        "The Chronicles of Narnia",
+        "Percy Jackson"
+      ],
       "correctIndex": 1,
       "timeLimitSec": 15
     },
@@ -255,7 +330,12 @@
     },
     {
       "text": "Who wrote '1984'?",
-      "options": ["Aldous Huxley", "George Orwell", "Ray Bradbury", "Philip K. Dick"],
+      "options": [
+        "Aldous Huxley",
+        "George Orwell",
+        "Ray Bradbury",
+        "Philip K. Dick"
+      ],
       "correctIndex": 1,
       "timeLimitSec": 20
     },
@@ -267,7 +347,12 @@
     },
     {
       "text": "Which actor played Jack Sparrow in 'Pirates of the Caribbean'?",
-      "options": ["Orlando Bloom", "Johnny Depp", "Geoffrey Rush", "Keira Knightley"],
+      "options": [
+        "Orlando Bloom",
+        "Johnny Depp",
+        "Geoffrey Rush",
+        "Keira Knightley"
+      ],
       "correctIndex": 1,
       "timeLimitSec": 15
     },
