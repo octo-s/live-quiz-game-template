@@ -6,7 +6,7 @@ import handleAnswer from "./game/handleAnswer";
 import handleStartGame from "./game/handleStartGame";
 import handleJoinGame from "./game/handleJoinGame";
 import handleCreateGame from "./game/handleCreateGame";
-import login from "./login";
+import handleReg from "./handleReg";
 const PORT = process.env.PORT ? parseInt(process.env.PORT) : 3000;
 
 // WebSocket server
@@ -27,8 +27,8 @@ wss.on('connection', (ws: WebSocket) => {
             const { type, data } = message;
 
             switch (type) {
-                case 'login':
-                    login(ws, data as RegData);
+                case 'reg':
+                    handleReg(ws, users,wsToUser, data as RegData);
                     break;
                 case 'create_game':
                     handleCreateGame(ws, data as CreateGameData);
