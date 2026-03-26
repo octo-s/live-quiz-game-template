@@ -28,10 +28,10 @@ wss.on('connection', (ws: WebSocket) => {
 
             switch (type) {
                 case 'reg':
-                    handleReg(ws, users,wsToUser, data as RegData);
+                    handleReg(ws, users, wsToUser, data as RegData);
                     break;
                 case 'create_game':
-                    handleCreateGame(ws, data as CreateGameData);
+                    handleCreateGame(ws, games, wsToUser, data as CreateGameData);
                     break;
                 case 'join_game':
                     handleJoinGame(ws, data as JoinGameData);
