@@ -3,12 +3,19 @@ import finishQuestion from '../gameplay/finishQuestion';
 import broadcast from './broadcast';
 import { Game, User } from '../types';
 
-function handleDisconnect(
-  users: Map<string, User>,
-  games: Map<string, Game>,
-  wsToUser: Map<WebSocket, string>,
-  ws: WebSocket
-): void {
+interface handleDisconnectParams {
+  ws: WebSocket;
+  users: Map<string, User>;
+  games: Map<string, Game>;
+  wsToUser: Map<WebSocket, string>;
+}
+
+function handleDisconnect({
+  users,
+  games,
+  wsToUser,
+  ws,
+}: handleDisconnectParams): void {
   const userIndex = wsToUser.get(ws);
   if (!userIndex) return;
 

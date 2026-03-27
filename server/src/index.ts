@@ -1,21 +1,12 @@
 import { WebSocketServer, WebSocket } from 'ws';
-import type {
-  User,
-  Game,
-  WSMessage,
-  RegData,
-  CreateGameData,
-  JoinGameData,
-  StartGameData,
-  AnswerData,
-} from './types';
+import type { User, Game, WSMessage } from './types';
 import handleDisconnect from './utils/handleDisconnect';
-import sendMessage from './utils/sendMessage';
 import handleAnswer from './gameplay/handleAnswer';
 import handleStartGame from './lobby/handleStartGame';
 import handleJoinGame from './lobby/handleJoinGame';
 import handleCreateGame from './lobby/handleCreateGame';
 import handleReg from './handleReg';
+import sendErrorMessage from './utils/sendErrorMessage';
 const PORT = process.env.PORT ? parseInt(process.env.PORT) : 3000;
 
 // WebSocket server
@@ -37,35 +28,29 @@ wss.on('connection', (ws: WebSocket) => {
 
       switch (type) {
         case 'reg':
-          handleReg(ws, users, wsToUser, data as RegData);
+          handleReg({ ws, users, wsToUser, data });
           break;
         case 'create_game':
-          handleCreateGame(ws, games, wsToUser, data as CreateGameData);
+          handleCreateGame({ ws, games, wsToUser, data });
           break;
         case 'join_game':
-          handleJoinGame(ws, games, users, wsToUser, data as JoinGameData);
+          handleJoinGame({ ws, games, users, wsToUser, data });
           break;
         case 'start_game':
-          handleStartGame(ws, users, games, wsToUser, data as StartGameData);
+          handleStartGame({ ws, games, users, wsToUser, data });
           break;
         case 'answer':
-          handleAnswer(ws, data as AnswerData);
+          handleAnswer({ ws, games, users, wsToUser, data });
           break;
         default:
-          sendMessage(ws, 'error', {
-            error: true,
-            errorText: `Unknown command: ${type}`,
-          });
+          sendErrorMessage(ws, `Unknown command: ${type}`);
       }
     } catch (e) {
-      sendMessage(ws, 'error', {
-        error: true,
-        errorText: 'Invalid JSON',
-      });
+      sendErrorMessage(ws, 'Invalid JSON');
     }
   });
 
   ws.on('close', () => {
-    handleDisconnect(ws);
+    handleDisconnect({ ws, games, users, wsToUser });
   });
 });

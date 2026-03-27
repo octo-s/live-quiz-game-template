@@ -1,39 +1,41 @@
 import { Game, StartGameData, User } from '../types';
 import { WebSocket } from 'ws';
-import sendMessage from '../utils/sendMessage';
 import sendQuestion from '../gameplay/sendQuestion';
+import sendErrorMessage from '../utils/sendErrorMessage';
 
-function handleStartGame(
-  ws: WebSocket,
-  users: Map<string, User>,
-  games: Map<string, Game>,
-  wsToUser: Map<WebSocket, string>,
-  data: StartGameData
-): void {
+interface handleStartGameParams {
+  ws: WebSocket;
+  users: Map<string, User>;
+  games: Map<string, Game>;
+  wsToUser: Map<WebSocket, string>;
+  data: StartGameData;
+}
+
+function handleStartGame({
+  ws,
+  users,
+  games,
+  wsToUser,
+  data,
+}: handleStartGameParams): void {
   const userIndex = wsToUser.get(ws);
   if (!userIndex) {
-    sendMessage(ws, 'error', { error: true, errorText: 'Not logged in' });
+    sendErrorMessage(ws, 'Not logged in');
     return;
   }
   const game = games.get(data.gameId);
   if (!game) {
-    sendMessage(ws, 'error', { error: true, errorText: 'Game not found' });
+    sendErrorMessage(ws, 'Game not found');
     return;
   }
 
   if (game.hostId !== userIndex) {
-    sendMessage(ws, 'error', {
-      error: true,
-      errorText: 'Only host can start the gameplay',
-    });
+    sendErrorMessage(ws, 'Only host can start the gameplay');
     return;
   }
 
   if (game.status !== 'waiting') {
-    sendMessage(ws, 'error', {
-      error: true,
-      errorText: 'Game already started',
-    });
+    sendErrorMessage(ws, 'Game already started');
     return;
   }
 

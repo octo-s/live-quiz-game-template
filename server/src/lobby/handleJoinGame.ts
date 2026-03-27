@@ -1,25 +1,34 @@
-import { Game, JoinGameData, Player, User } from '../types';
+import { Game, JoinGameData, User } from '../types';
 import { WebSocket } from 'ws';
 import sendMessage from '../utils/sendMessage';
 import broadcast from '../utils/broadcast';
+import sendErrorMessage from '../utils/sendErrorMessage';
 
-function handleJoinGame(
-  ws: WebSocket,
-  games: Map<string, Game>,
-  users: Map<string, User>,
-  wsToUser: Map<WebSocket, string>,
-  data: JoinGameData
-): void {
+interface handleJoinGameParams {
+  ws: WebSocket;
+  users: Map<string, User>;
+  games: Map<string, Game>;
+  wsToUser: Map<WebSocket, string>;
+  data: JoinGameData;
+}
+
+function handleJoinGame({
+  ws,
+  games,
+  users,
+  wsToUser,
+  data,
+}: handleJoinGameParams): void {
   const userIndex = wsToUser.get(ws);
   if (!userIndex) {
-    sendMessage(ws, 'error', { error: true, errorText: 'Not logged in' });
+    sendErrorMessage(ws, 'Not logged in');
     return;
   }
 
   const currentUser = users.get(userIndex);
 
   if (!currentUser) {
-    sendMessage(ws, 'error', { error: true, errorText: 'User not found' });
+    sendErrorMessage(ws, 'User not found');
     return;
   }
 
@@ -28,23 +37,16 @@ function handleJoinGame(
   const game = [...games.values()].find((g) => g.code === code);
 
   if (!game) {
-    sendMessage(ws, 'error', { error: true, errorText: 'Game not found' });
     return;
   }
 
   if (game.status !== 'waiting') {
-    sendMessage(ws, 'error', {
-      error: true,
-      errorText: 'Game already started',
-    });
+    sendErrorMessage(ws, 'Game already started');
     return;
   }
 
   if (game.players.some((p) => p.index === userIndex)) {
-    sendMessage(ws, 'error', {
-      error: true,
-      errorText: 'Already in this gameplay',
-    });
+    sendErrorMessage(ws, 'Already in this gameplay');
     return;
   }
 

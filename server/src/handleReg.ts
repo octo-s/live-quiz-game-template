@@ -2,12 +2,14 @@ import { RegData, type User } from './types';
 import { WebSocket } from 'ws';
 import sendMessage from './utils/sendMessage';
 
-function handleReg(
-  ws: WebSocket,
-  users: Map<string, User>,
-  wsToUser: Map<WebSocket, string>,
-  data: RegData
-): void {
+interface handleRegParams {
+  ws: WebSocket;
+  users: Map<string, User>;
+  wsToUser: Map<WebSocket, string>;
+  data: RegData;
+}
+
+function handleReg({ ws, users, wsToUser, data }: handleRegParams): void {
   const { name, password } = data;
 
   const existingUser = [...users.values()].find((u) => u.name === name);
