@@ -1,9 +1,11 @@
 import { Game, StartGameData, User } from '../types';
 import { WebSocket } from 'ws';
 import sendMessage from '../utils/sendMessage';
+import sendQuestion from '../gameplay/sendQuestion';
 
 function handleStartGame(
   ws: WebSocket,
+  users: Map<string, User>,
   games: Map<string, Game>,
   wsToUser: Map<WebSocket, string>,
   data: StartGameData
@@ -22,7 +24,7 @@ function handleStartGame(
   if (game.hostId !== userIndex) {
     sendMessage(ws, 'error', {
       error: true,
-      errorText: 'Only host can start the game',
+      errorText: 'Only host can start the gameplay',
     });
     return;
   }
@@ -37,6 +39,8 @@ function handleStartGame(
 
   game.status = 'in_progress';
   game.currentQuestion = 0;
+
+  sendQuestion(users, game);
 }
 
 export default handleStartGame;

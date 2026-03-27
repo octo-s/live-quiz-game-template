@@ -11,10 +11,10 @@ import type {
 } from './types';
 import handleDisconnect from './utils/handleDisconnect';
 import sendMessage from './utils/sendMessage';
-import handleAnswer from './game/handleAnswer';
-import handleStartGame from './game/handleStartGame';
-import handleJoinGame from './game/handleJoinGame';
-import handleCreateGame from './game/handleCreateGame';
+import handleAnswer from './gameplay/handleAnswer';
+import handleStartGame from './lobby/handleStartGame';
+import handleJoinGame from './lobby/handleJoinGame';
+import handleCreateGame from './lobby/handleCreateGame';
 import handleReg from './handleReg';
 const PORT = process.env.PORT ? parseInt(process.env.PORT) : 3000;
 
@@ -46,7 +46,7 @@ wss.on('connection', (ws: WebSocket) => {
           handleJoinGame(ws, games, users, wsToUser, data as JoinGameData);
           break;
         case 'start_game':
-          handleStartGame(ws, games, wsToUser, data as StartGameData);
+          handleStartGame(ws, users, games, wsToUser, data as StartGameData);
           break;
         case 'answer':
           handleAnswer(ws, data as AnswerData);

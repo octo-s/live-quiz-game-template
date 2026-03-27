@@ -43,7 +43,7 @@ function handleJoinGame(
   if (game.players.some((p) => p.index === userIndex)) {
     sendMessage(ws, 'error', {
       error: true,
-      errorText: 'Already in this game',
+      errorText: 'Already in this gameplay',
     });
     return;
   }
