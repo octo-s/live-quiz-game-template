@@ -1,6 +1,7 @@
 import broadcast from '../utils/broadcast';
 import { Game, User } from '../types';
 import finishQuestion from './finishQuestion';
+import finishGame from './finishGame';
 
 function sendQuestion(users: Map<string, User>, game: Game): void {
   const question = game.questions[game.currentQuestion];
@@ -30,7 +31,7 @@ function sendQuestion(users: Map<string, User>, game: Game): void {
     if (game.currentQuestion < game.questions.length) {
       setTimeout(() => sendQuestion(users, game), 3000);
     } else {
-      // todo finishGame(game);
+      finishGame(users, game);
     }
   }, question.timeLimitSec * 1000);
 }
