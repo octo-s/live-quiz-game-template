@@ -35,6 +35,6 @@
       "options": ["Titanic", "The Bodyguard", "Moulin Rouge", "Chicago"],
       "correctIndex": 0,
       "timeLimitSec": 15
-    },
+    }
   ]
 }
