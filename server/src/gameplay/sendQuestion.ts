@@ -25,14 +25,6 @@ function sendQuestion(users: Map<string, User>, game: Game): void {
 
   game.questionTimer = setTimeout(() => {
     finishQuestion(users, game);
-
-    game.currentQuestion++;
-
-    if (game.currentQuestion < game.questions.length) {
-      setTimeout(() => sendQuestion(users, game), 3000);
-    } else {
-      finishGame(users, game);
-    }
   }, question.timeLimitSec * 1000);
 }
 
