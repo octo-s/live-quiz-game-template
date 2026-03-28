@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "questions": [
+    {
+      "text": "What is the capital of Egypt?",
+      "options": ["Cairo", "Alexandria", "Luxor", "Giza"],
+      "correctIndex": 0,
+      "timeLimitSec": 15
+    },
+    {
+      "text": "In 'Star Wars', what is Luke Skywalker's father's name?",
+      "options": ["Obi-Wan Kenobi", "Darth Vader", "Yoda", "Han Solo"],
+      "correctIndex": 1,
+      "timeLimitSec": 20
+    },
+    {
+      "text": "Which book is about a young wizard named Harry?",
+      "options": [
+        "The Hobbit",
+        "Harry Potter",
+        "The Chronicles of Narnia",
+        "Percy Jackson"
+      ],
+      "correctIndex": 1,
+      "timeLimitSec": 15
+    },
+    {
+      "text": "What is the capital of Mexico?",
+      "options": ["Mexico City", "Cancun", "Guadalajara", "Monterrey"],
+      "correctIndex": 0,
+      "timeLimitSec": 15
+    },
+    {
+      "text": "Which movie features the song 'My Heart Will Go On'?",
+      "options": ["Titanic", "The Bodyguard", "Moulin Rouge", "Chicago"],
+      "correctIndex": 0,
+      "timeLimitSec": 15
+    }
+  ]
+}

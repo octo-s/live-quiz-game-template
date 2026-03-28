@@ -1,0 +1,384 @@
+{
+  "schemaVersion": 1,
+  "questions": [
+    {
+      "text": "What is the capital of France?",
+      "options": ["London", "Berlin", "Paris", "Madrid"],
+      "correctIndex": 2,
+      "timeLimitSec": 15
+    },
+    {
+      "text": "What is the capital of Japan?",
+      "options": ["Beijing", "Tokyo", "Seoul", "Bangkok"],
+      "correctIndex": 1,
+      "timeLimitSec": 15
+    },
+    {
+      "text": "What is the capital of Australia?",
+      "options": ["Sydney", "Melbourne", "Canberra", "Perth"],
+      "correctIndex": 2,
+      "timeLimitSec": 20
+    },
+    {
+      "text": "What is the capital of Brazil?",
+      "options": ["Rio de Janeiro", "São Paulo", "Brasília", "Salvador"],
+      "correctIndex": 2,
+      "timeLimitSec": 20
+    },
+    {
+      "text": "In which movie does Leonardo DiCaprio play Jack Dawson?",
+      "options": [
+        "Inception",
+        "Titanic",
+        "The Revenant",
+        "The Wolf of Wall Street"
+      ],
+      "correctIndex": 1,
+      "timeLimitSec": 15
+    },
+    {
+      "text": "Who directed the movie 'The Godfather'?",
+      "options": [
+        "Martin Scorsese",
+        "Francis Ford Coppola",
+        "Steven Spielberg",
+        "Quentin Tarantino"
+      ],
+      "correctIndex": 1,
+      "timeLimitSec": 20
+    },
+    {
+      "text": "Which movie features the character Forrest Gump?",
+      "options": [
+        "Saving Private Ryan",
+        "Forrest Gump",
+        "Cast Away",
+        "The Green Mile"
+      ],
+      "correctIndex": 1,
+      "timeLimitSec": 15
+    },
+    {
+      "text": "What is the name of the fairy in Peter Pan?",
+      "options": ["Wendy", "Tinker Bell", "Ariel", "Belle"],
+      "correctIndex": 1,
+      "timeLimitSec": 20
+    },
+    {
+      "text": "Which dish is traditionally from Italy and made with rice, broth, and Parmesan?",
+      "options": ["Paella", "Risotto", "Sushi", "Tacos"],
+      "correctIndex": 1,
+      "timeLimitSec": 20
+    },
+    {
+      "text": "What is the main ingredient in guacamole?",
+      "options": ["Tomato", "Avocado", "Onion", "Pepper"],
+      "correctIndex": 1,
+      "timeLimitSec": 15
+    },
+    {
+      "text": "Which book was written by Jane Austen?",
+      "options": [
+        "1984",
+        "Pride and Prejudice",
+        "To Kill a Mockingbird",
+        "The Great Gatsby"
+      ],
+      "correctIndex": 1,
+      "timeLimitSec": 20
+    },
+    {
+      "text": "Who wrote 'Romeo and Juliet'?",
+      "options": [
+        "Charles Dickens",
+        "William Shakespeare",
+        "Mark Twain",
+        "J.K. Rowling"
+      ],
+      "correctIndex": 1,
+      "timeLimitSec": 15
+    },
+    {
+      "text": "What is the capital of Canada?",
+      "options": ["Toronto", "Vancouver", "Ottawa", "Montreal"],
+      "correctIndex": 2,
+      "timeLimitSec": 20
+    },
+    {
+      "text": "In which city would you find the Eiffel Tower?",
+      "options": ["Rome", "Paris", "London", "Berlin"],
+      "correctIndex": 1,
+      "timeLimitSec": 15
+    },
+    {
+      "text": "Which Hollywood movie features a giant shark terrorizing a beach town?",
+      "options": ["Jaws", "Alien", "Predator", "The Thing"],
+      "correctIndex": 0,
+      "timeLimitSec": 15
+    },
+    {
+      "text": "What is sushi traditionally wrapped in?",
+      "options": ["Lettuce", "Nori (seaweed)", "Bread", "Rice paper"],
+      "correctIndex": 1,
+      "timeLimitSec": 20
+    },
+    {
+      "text": "Who painted the Mona Lisa?",
+      "options": [
+        "Vincent van Gogh",
+        "Pablo Picasso",
+        "Leonardo da Vinci",
+        "Michelangelo"
+      ],
+      "correctIndex": 2,
+      "timeLimitSec": 15
+    },
+    {
+      "text": "What is the capital of India?",
+      "options": ["Mumbai", "New Delhi", "Kolkata", "Bangalore"],
+      "correctIndex": 1,
+      "timeLimitSec": 20
+    },
+    {
+      "text": "Which movie won the Oscar for Best Picture in 1994?",
+      "options": [
+        "Pulp Fiction",
+        "Forrest Gump",
+        "The Shawshank Redemption",
+        "Braveheart"
+      ],
+      "correctIndex": 1,
+      "timeLimitSec": 25
+    },
+    {
+      "text": "What Italian dish consists of layered pasta, sauce, and cheese?",
+      "options": ["Spaghetti", "Lasagna", "Pizza", "Ravioli"],
+      "correctIndex": 1,
+      "timeLimitSec": 15
+    },
+    {
+      "text": "Who wrote the Harry Potter series?",
+      "options": [
+        "J.R.R. Tolkien",
+        "J.K. Rowling",
+        "George R.R. Martin",
+        "Suzanne Collins"
+      ],
+      "correctIndex": 1,
+      "timeLimitSec": 15
+    },
+    {
+      "text": "What is the capital of Spain?",
+      "options": ["Barcelona", "Madrid", "Valencia", "Seville"],
+      "correctIndex": 1,
+      "timeLimitSec": 15
+    },
+    {
+      "text": "In 'The Lord of the Rings', what is the name of the ring that Frodo carries?",
+      "options": [
+        "The One Ring",
+        "The Ring of Power",
+        "Sauron's Ring",
+        "All of the above"
+      ],
+      "correctIndex": 0,
+      "timeLimitSec": 20
+    },
+    {
+      "text": "Which landmark is known as the 'Christ the Redeemer'?",
+      "options": [
+        "Statue of Liberty",
+        "Eiffel Tower",
+        "Christ the Redeemer in Rio",
+        "Great Wall of China"
+      ],
+      "correctIndex": 2,
+      "timeLimitSec": 15
+    },
+    {
+      "text": "What is the national dish of Mexico often made with corn tortillas?",
+      "options": ["Tacos", "Paella", "Sushi", "Croissant"],
+      "correctIndex": 0,
+      "timeLimitSec": 20
+    },
+    {
+      "text": "Who directed 'Inception' and 'The Dark Knight'?",
+      "options": [
+        "James Cameron",
+        "Christopher Nolan",
+        "Steven Spielberg",
+        "Peter Jackson"
+      ],
+      "correctIndex": 1,
+      "timeLimitSec": 20
+    },
+    {
+      "text": "What is the capital of China?",
+      "options": ["Shanghai", "Beijing", "Hong Kong", "Guangzhou"],
+      "correctIndex": 1,
+      "timeLimitSec": 15
+    },
+    {
+      "text": "Which book series features the character Katniss Everdeen?",
+      "options": [
+        "The Hunger Games",
+        "Divergent",
+        "Maze Runner",
+        "Percy Jackson"
+      ],
+      "correctIndex": 0,
+      "timeLimitSec": 20
+    },
+    {
+      "text": "What French dish is made from snails?",
+      "options": ["Foie Gras", "Escargot", "Coq au Vin", "Bouillabaisse"],
+      "correctIndex": 1,
+      "timeLimitSec": 25
+    },
+    {
+      "text": "What is the capital of Russia?",
+      "options": ["Saint Petersburg", "Moscow", "Kiev", "Minsk"],
+      "correctIndex": 1,
+      "timeLimitSec": 15
+    },
+    {
+      "text": "In which movie does 'Here's Johnny!' appear?",
+      "options": ["The Shining", "Psycho", "Halloween", "Friday the 13th"],
+      "correctIndex": 0,
+      "timeLimitSec": 20
+    },
+    {
+      "text": "Which dish is a Japanese noodle soup?",
+      "options": ["Ramen", "Pad Thai", "Pho", "Biryani"],
+      "correctIndex": 0,
+      "timeLimitSec": 20
+    },
+    {
+      "text": "Who wrote 'The Great Gatsby'?",
+      "options": [
+        "Ernest Hemingway",
+        "F. Scott Fitzgerald",
+        "John Steinbeck",
+        "William Faulkner"
+      ],
+      "correctIndex": 1,
+      "timeLimitSec": 20
+    },
+    {
+      "text": "What is the capital of South Korea?",
+      "options": ["Tokyo", "Beijing", "Seoul", "Pyongyang"],
+      "correctIndex": 2,
+      "timeLimitSec": 20
+    },
+    {
+      "text": "Which actor played Indiana Jones?",
+      "options": [
+        "Tom Hanks",
+        "Harrison Ford",
+        "Arnold Schwarzenegger",
+        "Bruce Willis"
+      ],
+      "correctIndex": 1,
+      "timeLimitSec": 15
+    },
+    {
+      "text": "What is hummus made from?",
+      "options": ["Chickpeas", "Lentils", "Beans", "Peas"],
+      "correctIndex": 0,
+      "timeLimitSec": 20
+    },
+    {
+      "text": "What is the capital of Egypt?",
+      "options": ["Cairo", "Alexandria", "Luxor", "Giza"],
+      "correctIndex": 0,
+      "timeLimitSec": 15
+    },
+    {
+      "text": "In 'Star Wars', what is Luke Skywalker's father's name?",
+      "options": ["Obi-Wan Kenobi", "Darth Vader", "Yoda", "Han Solo"],
+      "correctIndex": 1,
+      "timeLimitSec": 20
+    },
+    {
+      "text": "Which book is about a young wizard named Harry?",
+      "options": [
+        "The Hobbit",
+        "Harry Potter",
+        "The Chronicles of Narnia",
+        "Percy Jackson"
+      ],
+      "correctIndex": 1,
+      "timeLimitSec": 15
+    },
+    {
+      "text": "What is the capital of Mexico?",
+      "options": ["Mexico City", "Cancun", "Guadalajara", "Monterrey"],
+      "correctIndex": 0,
+      "timeLimitSec": 15
+    },
+    {
+      "text": "Which movie features the song 'My Heart Will Go On'?",
+      "options": ["Titanic", "The Bodyguard", "Moulin Rouge", "Chicago"],
+      "correctIndex": 0,
+      "timeLimitSec": 15
+    },
+    {
+      "text": "What is a traditional Spanish dish made with rice, saffron, and seafood?",
+      "options": ["Paella", "Tapas", "Gazpacho", "Churros"],
+      "correctIndex": 0,
+      "timeLimitSec": 20
+    },
+    {
+      "text": "Who wrote '1984'?",
+      "options": [
+        "Aldous Huxley",
+        "George Orwell",
+        "Ray Bradbury",
+        "Philip K. Dick"
+      ],
+      "correctIndex": 1,
+      "timeLimitSec": 20
+    },
+    {
+      "text": "What landmark is located in New York Harbor?",
+      "options": ["Eiffel Tower", "Statue of Liberty", "Big Ben", "Taj Mahal"],
+      "correctIndex": 1,
+      "timeLimitSec": 15
+    },
+    {
+      "text": "Which actor played Jack Sparrow in 'Pirates of the Caribbean'?",
+      "options": [
+        "Orlando Bloom",
+        "Johnny Depp",
+        "Geoffrey Rush",
+        "Keira Knightley"
+      ],
+      "correctIndex": 1,
+      "timeLimitSec": 15
+    },
+    {
+      "text": "What is the capital of Germany?",
+      "options": ["Munich", "Berlin", "Hamburg", "Frankfurt"],
+      "correctIndex": 1,
+      "timeLimitSec": 15
+    },
+    {
+      "text": "Which movie is about a clownfish searching for his son?",
+      "options": ["Shark Tale", "Finding Nemo", "The Little Mermaid", "Moana"],
+      "correctIndex": 1,
+      "timeLimitSec": 20
+    },
+    {
+      "text": "What Greek dish is made with layers of phyllo dough and nuts?",
+      "options": ["Moussaka", "Baklava", "Souvlaki", "Tzatziki"],
+      "correctIndex": 1,
+      "timeLimitSec": 25
+    },
+    {
+      "text": "What is the capital of Italy?",
+      "options": ["Milan", "Rome", "Venice", "Florence"],
+      "correctIndex": 1,
+      "timeLimitSec": 15
+    }
+  ]
+}
